@@ -35,7 +35,7 @@ for i = 1:rows(data)
     %store data in a table
     normalizing_channel_area_fraction(i,1) = norm_area_frac;
     quantification_channel_area_fraction(i,1) = quant_area_frac;
-    channel_ratio(i,1) = norm_area_frac/quant_area_frac;
+    channel_ratio(i,1) = quant_area_frac/norm_area_frac;
 end
 
 %store results in a table
